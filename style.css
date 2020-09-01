@@ -1,0 +1,47 @@
+
+
+body {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: black;
+}
+
+.face {
+  position: relative;
+  width: 300px;
+  height:300px;
+  border-radius: 50%;
+  background: goldenrod;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eyes {
+  position: relative;
+  top:0;
+  display: flex;
+}
+.eyes .eye {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: block;
+  background: white;
+  margin: 0 15px;
+  border-radius: 50%;
+}
+
+.eyes .eye::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: -25px;
+  width: 40px;
+  height: 40px;
+  background: black;
+  border-radius: 50%;
+}
